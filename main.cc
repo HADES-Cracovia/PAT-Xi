@@ -195,8 +195,8 @@ int main(Int_t argc, Char_t **argv)
   //myPids2.add("HpHmHpHm", "PPimPipPim",eProton,ePiMinus,ePiPlus,ePiMinus);
   //myPids2.add("HpHmLpLm", "PipPimEpEm",ePiPlus,ePiMinus,ePositron,eElectron);
   //myPids2.add("HpLpLm", "PEpEm",eProton,ePositron,eElectron);
-  myPids2.add("HmHm","Pim","Pim",ePiMinus,ePiMinus);
-  myPids2.add("HmHmHp","Pim","Pim",ePiMinus,ePiMinus,eProton);
+  myPids2.add("HmHm","PimPim",ePiMinus,ePiMinus);
+  myPids2.add("HmHmHp","PimPimP",ePiMinus,ePiMinus,eProton);
 #endif
   //*************************************************** 
 #ifdef LEPTONS 
@@ -220,11 +220,13 @@ int main(Int_t argc, Char_t **argv)
 #ifdef HADRONS
   //myPids_A2.add("HpHp", "PP_ID",eProton,eProton);
   //myPids_A2.add("HpHp", "PPip_ID",eProton,ePiPlus);
-  myPids_A2.add("HpHm", "PipPim_ID",ePiPlus,ePiMinus);
-  myPids_A2.add("HpHm", "PPim_ID",eProton,ePiMinus);
-  myPids_A2.add("HpHmHpHm", "PPimPipPim_ID",eProton,ePiMinus,ePiPlus,ePiMinus);
-  myPids_A2.add("HpHmLpLm", "PipPimEpEm_ID",ePiPlus,ePiMinus,ePositron,eElectron);
-  myPids_A2.add("HpLpLm", "PEpEm_ID",eProton,ePositron,eElectron);
+  //myPids_A2.add("HpHm", "PipPim_ID",ePiPlus,ePiMinus);
+  //myPids_A2.add("HpHm", "PPim_ID",eProton,ePiMinus);
+  //myPids_A2.add("HpHmHpHm", "PPimPipPim_ID",eProton,ePiMinus,ePiPlus,ePiMinus);
+  //myPids_A2.add("HpHmLpLm", "PipPimEpEm_ID",ePiPlus,ePiMinus,ePositron,eElectron);
+  //myPids_A2.add("HpLpLm", "PEpEm_ID",eProton,ePositron,eElectron);
+  myPids_A2.add("HmHm","PimPim_ID",ePiMinus,ePiMinus);
+  myPids_A2.add("HmHmHp","PimPimP_ID",ePiMinus,ePiMinus,eProton);
 #endif
 
   HTrackCut tCut("all");
